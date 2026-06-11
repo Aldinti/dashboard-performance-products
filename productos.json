@@ -1,0 +1,44 @@
+[
+   {
+      "producto": "Smartphone A",
+      "mes": "Enero",
+      "ventas": 120,
+      "ingresos": 24000,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Enero",
+      "ventas": 85,
+      "ingresos": 17000,
+      "precio": 200
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Enero",
+      "ventas": 60,
+      "ingresos": 18000,
+      "precio": 300
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Febrero",
+      "ventas": 150,
+      "ingresos": 30000,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Febrero",
+      "ventas": 90,
+      "ingresos": 18000,
+      "precio": 200
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Febrero",
+      "ventas": 70,
+      "ingresos": 21000,
+      "precio": 300
+   }
+]

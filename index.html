@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Desempeño de Productos</title>
+    
+    <!-- Cargamos la tipografía Plus Jakarta Sans para la interfaz general y JetBrains Mono para los números y datos de la grilla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos de la aplicación -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme"> <!-- Por defecto iniciamos en modo oscuro (dark-theme) para un look moderno de alta gama -->
+
+    <div class="dashboard-wrapper">
+        
+        <!-- HEADER PRINCIPAL: Título, metadatos y control del tema visual -->
+        <header class="main-header">
+            <div class="header-titles">
+                <h1>Dashboard de Desempeño de Productos</h1>
+                <p class="subtitle">Herramienta de análisis interactivo de ventas, ingresos y precios para toma de decisiones comerciales.</p>
+            </div>
+            
+            <div class="header-actions">
+                <!-- Información del archivo activo y botón para alternar el tema claro/oscuro -->
+                <div class="file-info">
+                    <span class="info-label">Archivo Activo:</span>
+                    <span id="active-filename" class="info-value">productos_100.json</span>
+                </div>
+                <button id="theme-toggle-btn" class="icon-btn" title="Cambiar Tema" aria-label="Cambiar Tema">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon" style="display: none;">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- GRID PRINCIPAL DE CONTENIDOS -->
+        <main class="dashboard-content">
+            
+            <!-- PANEL LATERAL DE CONTROLES: Filtros y carga de archivos JSON -->
+            <aside class="controls-panel card">
+                <div class="panel-section">
+                    <h2>Carga de Datos</h2>
+                    <p class="section-desc">Cargá un archivo JSON para actualizar las métricas y gráficos del dashboard.</p>
+                    
+                    <!-- Input de archivo nativo oculto y etiqueta estilizada como botón interactivo -->
+                    <div class="upload-container">
+                        <input type="file" id="json-upload" accept=".json" class="file-input">
+                        <label for="json-upload" class="upload-btn">
+                            <span class="upload-icon">📂</span> Seleccionar JSON
+                        </label>
+                    </div>
+
+                    <!-- Botón para recargar el archivo JSON desde el servidor en tiempo real (Nuevo)
+                         Esto permite aplicar cualquier edición manual que se haga sobre los datos en disco sin recargar la página entera -->
+                    <button id="update-api-btn" class="action-btn primary-btn" style="margin-top: 12px;">
+                        <span class="btn-icon">🔄</span> Actualizar Datos
+                    </button>
+                </div>
+
+                <hr class="panel-divider">
+
+                <div class="panel-section">
+                    <div class="section-header">
+                        <h2>Filtro de Productos</h2>
+                        <div class="quick-actions">
+                            <button id="select-all-prods" class="text-btn">Todos</button>
+                            <button id="deselect-all-prods" class="text-btn">Ninguno</button>
+                        </div>
+                    </div>
+                    <!-- Contenedor dinámico donde script.js inyectará los checkboxes de productos cargados -->
+                    <div id="product-filters" class="checklist-container">
+                        <p class="loading-placeholder">Cargando productos...</p>
+                    </div>
+                </div>
+
+                <hr class="panel-divider">
+
+                <div class="panel-section">
+                    <div class="section-header">
+                        <h2>Filtro de Meses</h2>
+                        <div class="quick-actions">
+                            <button id="select-all-months" class="text-btn">Todos</button>
+                            <button id="deselect-all-months" class="text-btn">Ninguno</button>
+                        </div>
+                    </div>
+                    <!-- Contenedor dinámico donde script.js inyectará los checkboxes de meses disponibles -->
+                    <div id="month-filters" class="checklist-container">
+                        <p class="loading-placeholder">Cargando meses...</p>
+                    </div>
+                </div>
+
+                <hr class="panel-divider">
+                
+                <!-- Botón para restaurar la configuración inicial del caso de estudio (Smartphone A/B, Tablet X y Enero/Febrero) -->
+                <button id="reset-filters-btn" class="action-btn secondary-btn">
+                    Restablecer Selección Inicial
+                </button>
+            </aside>
+
+            <!-- PANEL DE VISUALIZACIÓN Y KPIs -->
+            <section class="visuals-panel">
+                
+                <!-- FILA DE TARJETAS DE KPIs: Resumen ejecutivo del desempeño financiero de la selección actual -->
+                <div class="kpi-grid">
+                    <div class="kpi-card card">
+                        <div class="kpi-icon sales-icon">📈</div>
+                        <div class="kpi-data">
+                            <h3>Ventas Totales</h3>
+                            <p id="kpi-ventas" class="kpi-value JetBrains-Mono">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi-card card">
+                        <div class="kpi-icon revenue-icon">💰</div>
+                        <div class="kpi-data">
+                            <h3>Ingresos Totales</h3>
+                            <p id="kpi-ingresos" class="kpi-value JetBrains-Mono">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi-card card">
+                        <div class="kpi-icon avg-price-icon">🏷️</div>
+                        <div class="kpi-data">
+                            <h3>Precio Promedio</h3>
+                            <p id="kpi-precio-promedio" class="kpi-value JetBrains-Mono">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi-card card">
+                        <div class="kpi-icon top-product-icon">🏆</div>
+                        <div class="kpi-data">
+                            <h3>Producto Líder</h3>
+                            <p id="kpi-producto-top" class="kpi-value">-</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRILA DE GRÁFICOS: Izquierda Google Charts (Básico), Derecha D3.js (Avanzado) -->
+                <div class="charts-grid">
+                    
+                    <!-- TARJETA: Gráfico Básico con Google Chart Library -->
+                    <div class="chart-card card" id="google-chart-card">
+                        <div class="chart-header">
+                            <div>
+                                <h2>Evolución de Ventas</h2>
+                                <p class="chart-desc">Gráfico de columnas agrupadas. Representa el número de ventas mensuales por producto para comparar volúmenes de forma directa.</p>
+                            </div>
+                        </div>
+                        <div class="chart-container-wrapper">
+                            <!-- El gráfico de Google Charts se renderizará dentro de este div -->
+                            <div id="google-chart" class="chart-content"></div>
+                        </div>
+                    </div>
+
+                    <!-- TARJETA: Gráfico Avanzado Multidimensional con D3.js -->
+                    <div class="chart-card card" id="d3-chart-card">
+                        <div class="chart-header">
+                            <div>
+                                <h2>Análisis Multidimensional (D3.js)</h2>
+                                <p class="chart-desc">Gráfico de dispersión interactivo. Permite evaluar dinámicamente múltiples variables representadas por posición, tamaño y color.</p>
+                            </div>
+                            
+                            <!-- Controles interactivos específicos para ajustar las dimensiones del gráfico D3 -->
+                            <div class="d3-chart-controls">
+                                <div class="control-group">
+                                    <label for="d3-y-axis-select">Eje Y:</label>
+                                    <select id="d3-y-axis-select" class="dropdown-control">
+                                        <option value="ventas" selected>Ventas</option>
+                                        <option value="ingresos">Ingresos</option>
+                                    </select>
+                                </div>
+                                <div class="control-group">
+                                    <label for="d3-size-select">Tamaño Burbuja:</label>
+                                    <select id="d3-size-select" class="dropdown-control">
+                                        <option value="precio" selected>Precio Unitario</option>
+                                        <option value="ingresos">Ingresos Totales</option>
+                                        <option value="ventas">Ventas Totales</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-container-wrapper">
+                            <!-- El gráfico D3.js inyectará el SVG en este contenedor -->
+                            <div id="d3-chart" class="chart-content"></div>
+                        </div>
+                        
+                        <!-- Leyenda interactiva para relacionar colores con productos -->
+                        <div id="d3-legend" class="chart-legend"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+        
+        <!-- FOOTER: Derechos e información académica -->
+        <footer class="main-footer">
+            <p>Maestría en Herramientas de Visualización - Actividad 1 &copy; 2026. Desarrollado por Aldinti.</p>
+        </footer>
+
+    </div>
+
+    <!-- CONTENEDOR DEL TOOLTIP FLOTANTE (D3.js):
+         Se mantendrá oculto (`opacity: 0`) y absoluto. Se posicionará dinámicamente cerca del cursor
+         cuando se active el evento mouseover sobre alguna burbuja. -->
+    <div id="d3-tooltip" class="tooltip card" style="position: absolute; opacity: 0; pointer-events: none; z-index: 1000;"></div>
+
+    <!-- CARGA DE LIBRERÍAS DE VISUALIZACIÓN DESDE CDN -->
+    <!-- 1. Google Charts Loader: Requerido para gráficos de columnas e integración dinámica -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <!-- 2. D3.js (v7): Requerido para la visualización avanzada multidimensional, transiciones y escalas -->
+    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- 3. Lógica de negocio de la aplicación frontend -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

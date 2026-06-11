@@ -1,0 +1,702 @@
+[
+   {
+      "producto": "Smartphone A",
+      "mes": "Enero",
+      "ventas": 52,
+      "ingresos": 10400,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Agosto",
+      "ventas": 154,
+      "ingresos": 30800,
+      "precio": 200
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Abril",
+      "ventas": 181,
+      "ingresos": 14480,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Abril",
+      "ventas": 145,
+      "ingresos": 29000,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Mayo",
+      "ventas": 50,
+      "ingresos": 10000,
+      "precio": 200
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Febrero",
+      "ventas": 74,
+      "ingresos": 22200,
+      "precio": 300
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Abril",
+      "ventas": 66,
+      "ingresos": 11880,
+      "precio": 180
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Mayo",
+      "ventas": 63,
+      "ingresos": 4410,
+      "precio": 70
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Junio",
+      "ventas": 384,
+      "ingresos": 9600,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Septiembre",
+      "ventas": 139,
+      "ingresos": 25020,
+      "precio": 180
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Octubre",
+      "ventas": 117,
+      "ingresos": 17550,
+      "precio": 150
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Enero",
+      "ventas": 73,
+      "ingresos": 13140,
+      "precio": 180
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Junio",
+      "ventas": 140,
+      "ingresos": 11200,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Junio",
+      "ventas": 142,
+      "ingresos": 28400,
+      "precio": 200
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Enero",
+      "ventas": 87,
+      "ingresos": 6090,
+      "precio": 70
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Febrero",
+      "ventas": 224,
+      "ingresos": 17920,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Agosto",
+      "ventas": 54,
+      "ingresos": 10800,
+      "precio": 200
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Abril",
+      "ventas": 26,
+      "ingresos": 20800,
+      "precio": 800
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Enero",
+      "ventas": 346,
+      "ingresos": 8650,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Marzo",
+      "ventas": 107,
+      "ingresos": 19260,
+      "precio": 180
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Septiembre",
+      "ventas": 38,
+      "ingresos": 11400,
+      "precio": 300
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Septiembre",
+      "ventas": 92,
+      "ingresos": 6440,
+      "precio": 70
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Octubre",
+      "ventas": 12,
+      "ingresos": 9600,
+      "precio": 800
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Diciembre",
+      "ventas": 126,
+      "ingresos": 22680,
+      "precio": 180
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Junio",
+      "ventas": 182,
+      "ingresos": 14560,
+      "precio": 80
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Mayo",
+      "ventas": 72,
+      "ingresos": 21600,
+      "precio": 300
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Octubre",
+      "ventas": 117,
+      "ingresos": 35100,
+      "precio": 300
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Agosto",
+      "ventas": 215,
+      "ingresos": 5375,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Enero",
+      "ventas": 99,
+      "ingresos": 17820,
+      "precio": 180
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Junio",
+      "ventas": 49,
+      "ingresos": 3430,
+      "precio": 70
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Noviembre",
+      "ventas": 145,
+      "ingresos": 21750,
+      "precio": 150
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Mayo",
+      "ventas": 82,
+      "ingresos": 5740,
+      "precio": 70
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Octubre",
+      "ventas": 73,
+      "ingresos": 21900,
+      "precio": 300
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Febrero",
+      "ventas": 107,
+      "ingresos": 8560,
+      "precio": 80
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Octubre",
+      "ventas": 374,
+      "ingresos": 9350,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Abril",
+      "ventas": 77,
+      "ingresos": 13860,
+      "precio": 180
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Febrero",
+      "ventas": 37,
+      "ingresos": 2590,
+      "precio": 70
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Septiembre",
+      "ventas": 100,
+      "ingresos": 30000,
+      "precio": 300
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Septiembre",
+      "ventas": 158,
+      "ingresos": 31600,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Febrero",
+      "ventas": 89,
+      "ingresos": 16020,
+      "precio": 180
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Abril",
+      "ventas": 187,
+      "ingresos": 37400,
+      "precio": 200
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Septiembre",
+      "ventas": 87,
+      "ingresos": 26100,
+      "precio": 300
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Julio",
+      "ventas": 67,
+      "ingresos": 20100,
+      "precio": 300
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Febrero",
+      "ventas": 97,
+      "ingresos": 7760,
+      "precio": 80
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Agosto",
+      "ventas": 35,
+      "ingresos": 10500,
+      "precio": 300
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Abril",
+      "ventas": 103,
+      "ingresos": 15450,
+      "precio": 150
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Abril",
+      "ventas": 158,
+      "ingresos": 12640,
+      "precio": 80
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Julio",
+      "ventas": 174,
+      "ingresos": 26100,
+      "precio": 150
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Agosto",
+      "ventas": 240,
+      "ingresos": 19200,
+      "precio": 80
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Junio",
+      "ventas": 92,
+      "ingresos": 27600,
+      "precio": 300
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Febrero",
+      "ventas": 53,
+      "ingresos": 15900,
+      "precio": 300
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Enero",
+      "ventas": 100,
+      "ingresos": 15000,
+      "precio": 150
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Agosto",
+      "ventas": 88,
+      "ingresos": 13200,
+      "precio": 150
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Enero",
+      "ventas": 99,
+      "ingresos": 19800,
+      "precio": 200
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Enero",
+      "ventas": 205,
+      "ingresos": 16400,
+      "precio": 80
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Diciembre",
+      "ventas": 119,
+      "ingresos": 35700,
+      "precio": 300
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Mayo",
+      "ventas": 92,
+      "ingresos": 13800,
+      "precio": 150
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Noviembre",
+      "ventas": 80,
+      "ingresos": 16000,
+      "precio": 200
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Abril",
+      "ventas": 137,
+      "ingresos": 3425,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Agosto",
+      "ventas": 54,
+      "ingresos": 9720,
+      "precio": 180
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Marzo",
+      "ventas": 96,
+      "ingresos": 7680,
+      "precio": 80
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Septiembre",
+      "ventas": 61,
+      "ingresos": 9150,
+      "precio": 150
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Enero",
+      "ventas": 93,
+      "ingresos": 27900,
+      "precio": 300
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Julio",
+      "ventas": 112,
+      "ingresos": 8960,
+      "precio": 80
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Agosto",
+      "ventas": 179,
+      "ingresos": 14320,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Agosto",
+      "ventas": 126,
+      "ingresos": 22680,
+      "precio": 180
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Agosto",
+      "ventas": 39,
+      "ingresos": 31200,
+      "precio": 800
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Abril",
+      "ventas": 96,
+      "ingresos": 6720,
+      "precio": 70
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Noviembre",
+      "ventas": 121,
+      "ingresos": 9680,
+      "precio": 80
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Marzo",
+      "ventas": 65,
+      "ingresos": 4550,
+      "precio": 70
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Octubre",
+      "ventas": 31,
+      "ingresos": 9300,
+      "precio": 300
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Noviembre",
+      "ventas": 87,
+      "ingresos": 13050,
+      "precio": 150
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Octubre",
+      "ventas": 63,
+      "ingresos": 4410,
+      "precio": 70
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Septiembre",
+      "ventas": 45,
+      "ingresos": 8100,
+      "precio": 180
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Agosto",
+      "ventas": 52,
+      "ingresos": 41600,
+      "precio": 800
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Octubre",
+      "ventas": 82,
+      "ingresos": 5740,
+      "precio": 70
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Febrero",
+      "ventas": 148,
+      "ingresos": 26640,
+      "precio": 180
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Marzo",
+      "ventas": 102,
+      "ingresos": 18360,
+      "precio": 180
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Febrero",
+      "ventas": 34,
+      "ingresos": 27200,
+      "precio": 800
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Enero",
+      "ventas": 364,
+      "ingresos": 9100,
+      "precio": 25
+   },
+   {
+      "producto": "Teclado Mecánico",
+      "mes": "Enero",
+      "ventas": 91,
+      "ingresos": 6370,
+      "precio": 70
+   },
+   {
+      "producto": "Tablet X",
+      "mes": "Enero",
+      "ventas": 48,
+      "ingresos": 14400,
+      "precio": 300
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Diciembre",
+      "ventas": 223,
+      "ingresos": 17840,
+      "precio": 80
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Enero",
+      "ventas": 145,
+      "ingresos": 21750,
+      "precio": 150
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Febrero",
+      "ventas": 118,
+      "ingresos": 2950,
+      "precio": 25
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Abril",
+      "ventas": 112,
+      "ingresos": 8960,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Agosto",
+      "ventas": 184,
+      "ingresos": 36800,
+      "precio": 200
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Diciembre",
+      "ventas": 113,
+      "ingresos": 9040,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Abril",
+      "ventas": 146,
+      "ingresos": 26280,
+      "precio": 180
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Mayo",
+      "ventas": 147,
+      "ingresos": 29400,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Octubre",
+      "ventas": 188,
+      "ingresos": 37600,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Enero",
+      "ventas": 160,
+      "ingresos": 32000,
+      "precio": 200
+   },
+   {
+      "producto": "Smartwatch Y",
+      "mes": "Noviembre",
+      "ventas": 78,
+      "ingresos": 11700,
+      "precio": 150
+   },
+   {
+      "producto": "Auriculares Z",
+      "mes": "Abril",
+      "ventas": 136,
+      "ingresos": 10880,
+      "precio": 80
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Marzo",
+      "ventas": 187,
+      "ingresos": 37400,
+      "precio": 200
+   },
+   {
+      "producto": "Smartphone B",
+      "mes": "Marzo",
+      "ventas": 127,
+      "ingresos": 22860,
+      "precio": 180
+   },
+   {
+      "producto": "Laptop Pro",
+      "mes": "Marzo",
+      "ventas": 20,
+      "ingresos": 16000,
+      "precio": 800
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Febrero",
+      "ventas": 68,
+      "ingresos": 13600,
+      "precio": 200
+   },
+   {
+      "producto": "Cargador Rápido",
+      "mes": "Mayo",
+      "ventas": 310,
+      "ingresos": 7750,
+      "precio": 25
+   },
+   {
+      "producto": "Smartphone A",
+      "mes": "Septiembre",
+      "ventas": 124,
+      "ingresos": 24800,
+      "precio": 200
+   }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "dashboard-app",
+  "version": "1.0.0",
+  "description": "Evaluar el desempeño de productos para optimizar la estrategia comercial.",
+  "license": "ISC",
+  "author": "Aldinti",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
